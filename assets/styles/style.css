@@ -6,10 +6,10 @@
   --header-height: 4rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(20, 95%, 55%);
+  --first-color: hsl(20, 75%, 60%);
   --first-color-alt: hsl(20, 95%, 48%);
   --title-color: hsl(24, 35%, 14%);
-  --text-color: hsl(25, 15%, 35%);
+  --text-color: hsl(25, 25%, 20%);
   --body-color: hsl(42, 100%, 97%);
   --container-color: hsl(0, 0%, 100%);
   --white-color: hsl(0, 0%, 100%);
@@ -238,10 +238,47 @@ img {
 
 
 /*=============== HOME ===============*/
+.home {
+  background-color: var(--first-color);
+}
 
+.home-container {
+  padding-block: 3rem 1rem;
+  row-gap: 3rem;
+}
+
+.home-title {
+  margin-bottom: 1rem;
+  font-size: var(--bigger-font-size);
+}
+
+.home-description {
+  margin-bottom: 2rem;
+}
+
+.home-image {
+  justify-self: center;
+}
+
+.home-img {
+  filter: var(--shadow-img);
+  width: 300px;
+}
 
 /*=============== BUTTON ===============*/
+.btn {
+  display: inline-block;
+  background-color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  color: var(--white-color);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  transition: box-shadow .2s;
+}
 
+.btn:hover {
+  box-shadow: 0 12px 24px hsla(24, 35%, 14%, .3);
+}
 
 /*=============== ABOUT ===============*/
 
