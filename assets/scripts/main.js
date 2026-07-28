@@ -21,3 +21,11 @@ const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(navLink => navLink.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
 }));
+
+/*=============== ADD SHADOW HEADER ===============*/
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+    window.scrollY >= 70 ? header.classList.add('shadow-header')
+                         : header.classList.remove('shadow-header');
+});

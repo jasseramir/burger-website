@@ -232,7 +232,9 @@ img {
 }
 
 /* Shadow header */
-
+.shadow-header {
+  box-shadow: 0 8px 24px hsla(24, 35%, 14%, .2);
+}
 
 /* Active link */
 
