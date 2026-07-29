@@ -1,165 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/styles/style.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/styles/style.css" />
 
-      <title>Burger Website</title>
-   </head>
+    <title>Burger Website</title>
+  </head>
 
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <span class="nav-logo"> Burger </span>
 
-       <nav class="nav container">
-         <span class="nav-logo">
-          Burger
-         </span>
-          
-          <div class="nav-menu" id="nav-menu">
-            <ul class="nav-list">
-              <li>
-                <a href="#home" class="nav-link">Home</a>
-              </li>
-              
-              <li>
-                <a href="#about" class="nav-link">About</a>
-              </li>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
 
-              <li>
-                <a href="#products" class="nav-link">Popular</a>
-              </li>
-              
-              <li>
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-            
-            <div class="nav-close" id="nav-close">
-              <i class="ri-close-large-line"></i>
-            </div>
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+
+            <li>
+              <a href="#products" class="nav-link">Popular</a>
+            </li>
+
+            <li>
+              <a href="#whyus" class="nav-link">Why Us</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-large-line"></i>
           </div>
-          
-          <div class="nav-toggle" id="nav-toggle">
-            <i class="ri-menu-fill"></i>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home-container container grid">
+          <div class="home-data">
+            <h1 class="home-title">Crafted Burgers, Made to Satisfy.</h1>
+
+            <p class="home-description">
+              Fresh ingredients, juicy burgers, and unforgettable flavor. Order
+              your favorite meal in just a few clicks.
+            </p>
+
+            <a href="#products" class="btn"> Order Now! </a>
           </div>
-        </nav>
-      </header>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <div class="home-container container grid">
-               <div class="home-data">
-                  <h1 class="home-title">
-                     Crafted Burgers,
-                     Made to Satisfy.
-                  </h1>
-                  
-                  <p class="home-description">
-                     Fresh ingredients, juicy burgers, and unforgettable flavor. 
-                     Order your favorite meal in just a few clicks.
-                  </p>
-                  
-                  <a href="#products" class="btn">
-                     Order Now!
-                  </a>
-               </div>
-               
-               <div class="home-image">
-                  <img src="assets/img/main-img.webp" class="home-img">
-               </div>
+          <div class="home-image">
+            <img src="assets/img/main-img.webp" class="home-img" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about-container container grid">
+          <div class="about-data">
+            <h2 class="about-title">Every Bite Matters.</h2>
+
+            <p class="about-description">
+              Every burger is made with fresh ingredients, premium quality, and
+              bold flavors to bring you a meal you'll always come back for.
+            </p>
+
+            <a href="#whyus" class="btn">Why Choose Us?</a>
+          </div>
+
+          <div class="about-images">
+            <img
+              src="assets/img/main-img.webp"
+              alt="burger"
+              class="about-img-1"
+            />
+            <img
+              src="assets/img/main-img.webp"
+              alt="burger"
+              class="about-img-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="section" id="products">
+        <h2 class="section-title">Popular Burgers</h2>
+
+        <div class="products-container container grid">
+          <article class="products-card">
+            <img
+              src="assets/img/main-img.webp"
+              alt="image"
+              class="products-img"
+            />
+
+            <h3 class="products-name">
+              Beef <br />
+              Burger
+            </h3>
+            <span class="products-price">15$</span>
+
+            <button class="products-button">
+              <i class="ri-shopping-cart-fill"></i>
+            </button>
+          </article>
+
+          <article class="products-card">
+            <img
+              src="assets/img/main-img.webp"
+              alt="image"
+              class="products-img"
+            />
+
+            <h3 class="products-name">
+              Chicken <br />
+              Burger
+            </h3>
+            <span class="products-price">10$</span>
+
+            <button class="products-button">
+              <i class="ri-shopping-cart-fill"></i>
+            </button>
+          </article>
+
+          <article class="products-card">
+            <img
+              src="assets/img/main-img.webp"
+              alt="image"
+              class="products-img"
+            />
+
+            <h3 class="products-name">
+              Cheese <br />
+              Burger
+            </h3>
+            <span class="products-price">12$</span>
+
+            <button class="products-button">
+              <i class="ri-shopping-cart-fill"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== WHY US ====================-->
+      <section class="section" id="whyus">
+        <h2 class="section-title whyus-title">Why Choose Us?</h2>
+
+        <div class="whyus-container container">
+          <article class="whyus-card">
+            <span class="whyus-number">1</span>
+
+            <div class="whyus-data">
+              <h3 class="whyus-card-title">Fast Delivery</h3>
+              <p class="whyus-card-description">Delivered in minutes.</p>
             </div>
-         </section>
+          </article>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-             <div class="about-container container grid">
-               <div class="about-data">
-                  <h2 class="about-title">Every Bite Matters.</h2>
-               
-                  <p class="about-description">
-                    Every burger is made with fresh ingredients, 
-                    premium quality, and bold flavors 
-                    to bring you a meal you'll always come back for.
-                  </p>
-               
-                  <a href="#whyus" class="btn">Why Choose Us?</a>
-               </div>
-               
-               <div class="about-images">
-                 <img src="assets/img/main-img.webp" alt="burger" class="about-img-1">
-                 <img src="assets/img/main-img.webp" alt="burger" class="about-img-2">
-               </div>
-             </div>
-         </section>
+          <article class="whyus-card">
+            <span class="whyus-number">2</span>
 
-         <!--==================== PRODUCTS ====================-->
-         <section class="section" id="products">
-            <h2 class="section-title">Popular Burgers</h2>
-            
-            <div class="products-container container grid">
-               <article class="products-card">
-                  <img src="assets/img/main-img.webp" alt="image" class="products-img">
-                  
-                  <h3 class="products-name">Beef <br> Burger</h3>
-                  <span class="products-price">15$</span>
-                  
-                  <button class="products-button">
-                     <i class="ri-shopping-cart-fill"></i>
-                  </button>
-               </article>
-               
-               <article class="products-card">
-                  <img src="assets/img/main-img.webp" alt="image" class="products-img">
-                  
-                  <h3 class="products-name">Chicken <br> Burger</h3>
-                  <span class="products-price">10$</span>
-                  
-                  <button class="products-button">
-                     <i class="ri-shopping-cart-fill"></i>
-                  </button>
-               </article>
-               
-               <article class="products-card">
-                  <img src="assets/img/main-img.webp" alt="image" class="products-img">
-                  
-                  <h3 class="products-name">Cheese <br> Burger</h3>
-                  <span class="products-price">12$</span>
-                  
-                  <button class="products-button">
-                     <i class="ri-shopping-cart-fill"></i>
-                  </button>
-               </article>
+            <div class="whyus-data">
+              <h3 class="whyus-card-title">Fresh Ingredients</h3>
+              <p class="whyus-card-description">Always fresh, every day.</p>
             </div>
-         </section>
+          </article>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
+          <article class="whyus-card">
+            <span class="whyus-number">3</span>
 
-         </section>
-      </main>
+            <div class="whyus-data">
+              <h3 class="whyus-card-title">Premium Quality</h3>
+              <p class="whyus-card-description">Made with care.</p>
+            </div>
+          </article>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
+          <article class="whyus-card">
+            <span class="whyus-number">4</span>
 
-      </footer>
+            <div class="whyus-data">
+              <h3 class="whyus-card-title">Best Taste</h3>
+              <p class="whyus-card-description">Flavor you'll remember.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <!--========== SCROLL UP ==========-->
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact"></section>
+    </main>
 
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/scripts/scrollreveal.min.js"></script>
+    <!--========== SCROLL UP ==========-->
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/scripts/main.js"></script>
-   </body>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/scripts/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>

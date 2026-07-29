@@ -15,8 +15,8 @@
   --white-color: hsl(0, 0%, 100%);
   --black-color: hsl(24, 35%, 14%);
   --border-color: hsl(30, 25%, 88%);
-  --shadow-color: hsla(20, 60%, 20%, .12);
-  --shadow-img: drop-shadow(0 16px 24px hsla(20, 60%, 20%, .18));
+  --shadow-color: hsla(20, 60%, 20%, 0.12);
+  --shadow-img: drop-shadow(0 16px 24px hsla(20, 60%, 20%, 0.18));
 
   /*========== Font & Typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -28,8 +28,8 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
 
   /*========== Font Weight ==========*/
   --font-regular: 400;
@@ -52,7 +52,7 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
+    --small-font-size: 0.875rem;
   }
 }
 
@@ -145,7 +145,7 @@ img {
   display: block;
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .main {
@@ -160,7 +160,7 @@ img {
   left: 0;
   background-color: var(--first-color);
   z-index: var(--z-fixed);
-  transition: box-shadow .4s;
+  transition: box-shadow 0.4s;
 }
 
 .nav {
@@ -174,7 +174,7 @@ img {
 .nav-logo {
   display: flex;
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
   font-family: var(--second-font);
   font-size: var(--h2-font-size);
   color: var(--title-color);
@@ -189,7 +189,7 @@ img {
 }
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1150px) {
   .nav-menu {
     position: fixed;
     top: -120%;
@@ -197,8 +197,8 @@ img {
     background-color: var(--body-color);
     width: 100%;
     padding-block: 4.5rem 3.5rem;
-    box-shadow: 0 4px 16px hsla(22, 100%, 8%, .2);
-    transition: top .4s;
+    box-shadow: 0 4px 16px hsla(22, 100%, 8%, 0.2);
+    transition: top 0.4s;
   }
 }
 
@@ -213,7 +213,7 @@ img {
   position: relative;
   color: var(--title-color);
   font-family: var(--second-font);
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -233,11 +233,10 @@ img {
 
 /* Shadow header */
 .shadow-header {
-  box-shadow: 0 8px 24px hsla(24, 35%, 14%, .2);
+  box-shadow: 0 8px 24px hsla(24, 35%, 14%, 0.2);
 }
 
 /* Active link */
-
 
 /*=============== HOME ===============*/
 .home {
@@ -275,11 +274,11 @@ img {
   color: var(--white-color);
   padding: 1rem 1.5rem;
   border-radius: 1rem;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
 }
 
 .btn:hover {
-  box-shadow: 0 12px 24px hsla(24, 35%, 14%, .3);
+  box-shadow: 0 12px 24px hsla(24, 35%, 14%, 0.3);
 }
 
 /*=============== ABOUT ===============*/
@@ -340,9 +339,9 @@ img {
 .products-card {
   position: relative;
   background-color: var(--container-color);
-  padding: 5rem .75rem 1.25rem .75rem;
+  padding: 5rem 0.75rem 1.25rem 0.75rem;
   border-radius: 1.5rem;
-  box-shadow: 0 8px 24px hsla(353, 100%, 8%, .1);
+  box-shadow: 0 8px 24px hsla(353, 100%, 8%, 0.1);
 }
 
 .products-img {
@@ -353,12 +352,12 @@ img {
   right: 0;
   margin: 0 auto;
   filter: var(--shadow-small-img);
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .products-name {
   font-size: var(--h3-font-size);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .products-price {
@@ -370,17 +369,17 @@ img {
 
 .products-button {
   position: absolute;
-  right: .75rem;
+  right: 0.75rem;
   bottom: 1.25rem;
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 4px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   display: inline-flex;
-  box-shadow: 0 4px 16px hsla(353, 100%, 40%, .4);
+  box-shadow: 0 4px 16px hsla(353, 100%, 40%, 0.4);
   cursor: pointer;
-  transition: background-color  4s;
+  transition: background-color 4s;
 }
 
 .products-button:hover {
@@ -388,36 +387,68 @@ img {
 }
 
 .products-card:hover .products-img {
-  transform: translateY(-.5rem);
+  transform: translateY(-0.5rem);
 }
 
 /*=============== WHY US ===============*/
+.whyus-title {
+  margin-top: 3rem;
+}
 
+.whyus-container {
+  padding-block: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.whyus-card {
+  padding: 1rem 1rem;
+  background-color: var(--container-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px hsla(353, 100%, 8%, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.whyus-number {
+  padding: 1rem 1.5rem;
+  background-color: var(--first-color);
+  border-radius: 12px;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h3-font-size);
+  transition: transform 0.3s;
+}
+
+.whyus-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 16px 30px hsla(20, 60%, 20%, 0.15);
+}
+
+.whyus-card:hover .whyus-number {
+  transform: rotate(-8deg) scale(1.08);
+}
 
 /*=============== CONTACT ===============*/
 
-
 /*=============== FOOTER ===============*/
-
 
 /*=============== SCROLL BAR ===============*/
 
-
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up */
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
 
-
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
-
