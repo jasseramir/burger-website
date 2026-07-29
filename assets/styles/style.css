@@ -581,6 +581,28 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+  }
+  
+  .products .section-title {
+    font-size: var(--h1-font-size);
+  }
+  
+  .products-container {
+    grid-template-columns: 150px;
+    justify-content: center;
+  }
+  
+  .whyus-title {
+    font-size: var(--h1-font-size);
+  }
+}
 
 /* For medium devices */
 
