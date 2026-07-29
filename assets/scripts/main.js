@@ -70,3 +70,16 @@ window.addEventListener("scroll", () => {
     ? scrollUp.classList.add("show-scroll")
     : scrollUp.classList.remove("show-scroll");
 });
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 200,
+});
+
+sr.reveal(`.contact, .products .section-title, .whyus-title`);
+sr.reveal(`.home-data, .about-images`, { origin: "left" });
+sr.reveal(`.home-image, .about-data`, { origin: "right" });
+sr.reveal(`.products-card, .whyus-card`, { interval: 100 });
