@@ -662,6 +662,10 @@ img {
     column-gap: 4rem;
   }
 
+  .active-link, .nav-link:hover {
+    color: var(--white-color);
+  }
+
   .home-container {
     grid-template-columns: 530px 550px;
     align-items: center;
