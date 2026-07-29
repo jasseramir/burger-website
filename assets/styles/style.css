@@ -304,7 +304,7 @@ img {
 .about-title {
   font-size: var(--h1-font-size);
   color: var(--white-color);
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
 }
 
 .about-description {
@@ -335,6 +335,10 @@ img {
 }
 
 /*=============== PRODUCTS ===============*/
+.products .section-title {
+  margin-top: 2rem;
+}
+
 .products-container {
   margin-top: 3rem;
   padding-top: 3.5rem;
@@ -398,7 +402,7 @@ img {
 
 /*=============== WHY US ===============*/
 .whyus-title {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .whyus-container {
@@ -441,6 +445,10 @@ img {
 }
 
 /*=============== CONTACT ===============*/
+.contact .section-subtitle {
+  margin-top: 2rem;
+}
+
 .contact-container {
   display: grid;
   gap: 2rem;
