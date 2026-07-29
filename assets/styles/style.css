@@ -435,6 +435,50 @@ img {
 }
 
 /*=============== CONTACT ===============*/
+.contact-container {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.contact-description {
+  max-width: 34rem;
+  line-height: 1.7;
+}
+
+.contact-form {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--border-color);
+  border-radius: 1rem;
+  background-color: var(--container-color);
+  color: var(--text-color);
+  transition: border-color .3s, box-shadow .3s;
+}
+
+.contact-input::placeholder {
+  color: var(--text-color);
+}
+
+.contact-input:focus {
+  border-color: var(--first-color);
+}
+
+.contact-area {
+  resize: none;
+  min-height: 10rem;
+}
+
+.contact-form .button {
+  justify-self: center;
+}
 
 /*=============== FOOTER ===============*/
 
