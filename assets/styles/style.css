@@ -460,7 +460,9 @@ img {
   border-radius: 1rem;
   background-color: var(--container-color);
   color: var(--text-color);
-  transition: border-color .3s, box-shadow .3s;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
 }
 
 .contact-input::placeholder {
@@ -476,11 +478,52 @@ img {
   min-height: 10rem;
 }
 
-.contact-form .button {
+.contact-form .btn {
+  width: 100%;
   justify-self: center;
+  margin-bottom: 2rem;
 }
 
 /*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--black-color);
+  padding-block: 2.5rem 2rem;
+}
+
+.footer-container {
+  justify-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.footer-title {
+  color: var(--white-color);
+  font-size: var(--big-font-size);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.footer-link {
+  color: var(--white-color);
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--first-color);
+}
+
+.footer-copy {
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+}
+
+.footer-copy strong {
+  color: var(--first-color);
+}
 
 /*=============== SCROLL BAR ===============*/
 
