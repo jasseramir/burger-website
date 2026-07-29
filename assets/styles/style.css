@@ -283,7 +283,51 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about {
+  background-color: var(--first-color);
+}
 
+.about-container {
+  padding-bottom: 3rem;
+  row-gap: 9rem;
+}
+
+.about-data {
+  text-align: center;
+}
+
+.about-title {
+  font-size: var(--h1-font-size);
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  margin-bottom: 2rem;
+}
+
+.about-images {
+  position: relative;
+  margin-right: 2rem;
+  justify-self: center;
+}
+
+.about-img-1 {
+  width: 280px;
+  rotate: 30deg;
+  position: relative;
+  z-index: var(--z-tooltip);
+  filter: var(--shadow-img);
+}
+
+.about-img-2 {
+  width: 210px;
+  rotate: -30deg;
+  position: absolute;
+  right: -2rem;
+  top: -6.5rem;
+  filter: var(--shadow-img);
+}
 
 /*=============== PRODUCTS ===============*/
 
